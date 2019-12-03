@@ -2,6 +2,7 @@
         
         :root {
             --color-green: #50fa7b;
+            --color-rocket: #7159c1;
         }
 
         * {
@@ -16,7 +17,7 @@
         }
         header {
             padding: 32px;
-            border-bottom: 1px solid #333;
+            border-bottom: 2px solid #333;
             background: rgb(30, 10, 53);
         }
         .links {
@@ -34,7 +35,7 @@
 
         .links a:hover  {
             color: var(--color-green); 
-            transition:  color 200ms;
+            transition:  color 300ms;
         }
 
         #wrapper  {
@@ -76,3 +77,69 @@
         #links-footer a {
             border-bottom: 1px solid var(--color-green);
         }
+
+
+        /*=== CARDS ===*/
+
+
+        .cards {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--color-rocket); 
+        }
+
+        .card__image-container img {
+            width: 100%;
+
+        }
+
+        .card__info,
+        .card__content {
+            padding: 24px;
+            text-align: center;
+        }
+
+        .card_info{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 5px 20px;
+        }
+
+        .card__price {
+            background-color: var(--color-rocket) ;
+            filter: brightness(90%);
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        /*=== MODAL ===*/
+        .modal-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        .modal{
+            background-color: white;
+            width: 80%;
+            height: 80%;
+            margin: 10vh auto;
+            position: relative;
+        }
+
+        .modal .close-modal{
+            color: black;
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            cursor:pointer;
+        }
+
