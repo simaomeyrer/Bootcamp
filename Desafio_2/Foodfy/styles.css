@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: white;
+    margin-left: 16%;
+    margin-top: 25px;
+    margin-right: 16%;
+}
+
+div.links li{
+    display: inline;
+}
+
+.links img{
+    margin-right: 80px;
+}
+
+.links a{
+    text-align: left;
+    color: black;
+    font-size: 16px;
+    margin: 25px;
+    text-decoration: none;   
+}
+
+#folder {
+    text-align: left;
+    margin-top: 30px;
+    padding: 0% 10%;    
+    border-radius: 30px 30px;
+    background-color: #FBDFDB;
+}
+ 
+#folder h2 {
+    bottom: auto
+} 
+
+#folder img{
+    display: flex;
+    margin-left: auto;
+    margin-bottom: auto; 
+}
+
